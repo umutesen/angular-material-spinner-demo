@@ -1,0 +1,5 @@
+<button mat-raised-button color="primary" (click)="getEmployees()">Get Employees</button>
+
+<mat-progress-bar color="accent" mode="indeterminate" *ngIf="spinnerService.visibility | async"></mat-progress-bar>
+
+<mat-spinner [diameter]="50" *ngIf="spinnerService.visibility | async"></mat-spinner>
